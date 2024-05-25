@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+    <div class="container">
+        <div id="auth-page" class="auth-page">
+            <h1>Sign Up</h1>
+            <form id="auth-form">
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="text" id="city" placeholder="City" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div id="welcome-page" class="welcome-page hidden">
+            <h1>Welcome, <span id="user-name"></span></h1>
+            <p>City: <span id="user-city"></span></p>
+            <p>Current Time: <span id="current-time"></span></p>
+            <div class="weather-options">
+                <button id="celsius">Get Weather in Celsius</button>
+                <button id="fahrenheit">Get Weather in Fahrenheit</button>
+            </div>
+            <div id="weather-info"></div>
+        </div>
+    </div>
+    <script src="weather.js"></script>
+</body>
+</html>
